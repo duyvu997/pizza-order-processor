@@ -11,7 +11,20 @@ const init = async () => {
         // host: 'localhost',
         port: process.env.PORT || 3000
     });
-
+    server.route({
+        method:'GET',
+        path: '/',
+        handler : (res, h)=>{
+            return 'Welcome to PizzaOrder Processor  :)'
+        }
+    });
+    server.route({
+        method:'GET',
+        path: '/favicon.ico',
+        handler : (res, h)=>{
+            return 'favicon.ico'
+        }
+    });
 
     server.route({
         method: 'POST',
