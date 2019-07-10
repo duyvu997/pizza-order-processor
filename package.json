@@ -1,0 +1,32 @@
+{
+  "name": "pizza-order-processor",
+  "version": "1.0.0",
+  "description": "This is a third partner of pizza-ordering",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nduy79/pizza-order-processor.git"
+  },
+  "keywords": [
+    "kafka",
+    "nodejs",
+    "hapi"
+  ],
+  "author": "VND-ngocduy0097@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nduy79/pizza-order-processor/issues"
+  },
+  "homepage": "https://github.com/nduy79/pizza-order-processor#readme",
+  "dependencies": {
+    "@hapi/hapi": "18.3.1",
+    "dotenv": "8.0.0",
+    "joi-objectid": "2.0.0",
+    "node-rdkafka": "2.7.0",
+    "nodemon": "1.19.1"
+  }
+}
