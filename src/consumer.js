@@ -42,13 +42,13 @@ consumer.on("data", function (m) {
 
     const stringData       = m.value.toString();    
     const objData          = JSON.parse(stringData);      
-    console.log('Receive order: '+ objData._id);
+    console.log(m);
+    setTimeout(function () {  
+      producer.deliverPizza(objData._id, "delivered")    
+    }, 15000);
 
-    setTimeout(function () {      
-    }, 3000);
 
-
-    producer.deliverPizza(objData._id, "delivered")
+    
 
 
 
