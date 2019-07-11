@@ -8,7 +8,7 @@ Joi.objectId = require('joi-objectid')(Joi);
 const init = async () => {
    
     const server = Hapi.server({
-        host: 'localhost',
+        // host: 'localhost',
         port: process.env.PORT || 3000
     });
     server.route({
