@@ -17,7 +17,7 @@ const kafkaConf = {
 };
 
 const prefix   = process.env.CLOUDKARAFKA_TOPIC_PREFIX;
-const topic    = `${prefix}user`;
+const topic    = `${prefix}nduy7979`;
 
 
 

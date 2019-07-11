@@ -15,7 +15,7 @@ var kafkaConf              = {
 };
 
 const prefix         = process.env.CLOUDKARAFKA_TOPIC_PREFIX;
-const topics         = [`${prefix}processOrder`];
+const topics         = [`${prefix}vnduy1177`];
 const consumer       = new Kafka.KafkaConsumer(kafkaConf,{
   "auto.offset.reset": "latest"
 });
