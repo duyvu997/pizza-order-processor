@@ -8,7 +8,7 @@ Joi.objectId = require('joi-objectid')(Joi);
 const init = async () => {
    
     const server = Hapi.server({
-        // host: 'localhost',
+        host: 'localhost',
         port: process.env.PORT || 3000
     });
     server.route({
@@ -18,6 +18,7 @@ const init = async () => {
             return 'Welcome to PizzaOrder Processor  :)'
         }
     });
+
     server.route({
         method:'GET',
         path: '/favicon.ico',
@@ -41,10 +42,6 @@ const init = async () => {
     consumer;
 }
    
-
- 
-
-
 
 process.on('unhandledRejection', (err) => {
 

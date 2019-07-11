@@ -103,7 +103,8 @@ const sendMessage = function (req, reply) {
 }
 const deliverPizza = function (orderId, status) {    
     try {
-      console.log(' order id: ' + orderId + 'is ' + status);
+      console.log('3rd Partner received the order, make pizza and deliver it to user after 3s');
+      console.log('Process and Delivered Pizza order id: ' + orderId );
       producer.produce(topic, -1, new Buffer.from(JSON.stringify({
         _id: orderId,
         status: status

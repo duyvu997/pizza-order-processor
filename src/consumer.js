@@ -32,7 +32,9 @@ consumer.on("ready", function (arg) {
   console.log('Consumer Start')
   console.log(`Consumer ${arg.name} ready`);
   consumer.subscribe(topics); 
+
   consumer.consume();
+  
 });
 
 
@@ -43,7 +45,7 @@ consumer.on("data", function (m) {
     console.log('Receive order: '+ objData._id);
 
     setTimeout(function () {      
-    }, 30000);
+    }, 3000);
 
 
     producer.deliverPizza(objData._id, "delivered")
