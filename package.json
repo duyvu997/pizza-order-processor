@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/nduy79/pizza-order-processor#readme",
   "dependencies": {
-    "@hapi/hapi": "18.3.1",
+    "@hapi/hapi": "18.4.1",
     "dotenv": "8.0.0",
     "joi-objectid": "2.0.0",
     "node-rdkafka": "2.7.0",
